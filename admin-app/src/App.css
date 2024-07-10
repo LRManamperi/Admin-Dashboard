@@ -225,3 +225,26 @@ body {
       display: none;
     }
   }
+
+  :root {
+    --theme-color: #1d2634;
+  }
+  
+  body {
+    background-color: var(--theme-color);
+    color: #9e9ea4;
+  }
+  
+  .dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  .setting-item {
+    margin-bottom: 20px;
+  }
+  
+  .setting-item label {
+    margin-right: 10px;
+  }
+  
