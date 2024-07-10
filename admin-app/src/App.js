@@ -1,11 +1,23 @@
-// App.jsx
-import { Container } from '@mui/material';
-import Dashboard from './Pages/dashboard';
+import { useState } from 'react'
+import './App.css'
+import Header from './components/Header'
+import Sidebar from './components/Sidebar'
+import Home from './components/Home'
 
-const App = () => (
-  <Container maxWidth="lg">
-    <Dashboard />
-  </Container>
-);
+function App() {
+  const [openSidebarToggle, setOpenSidebarToggle] = useState(false)
 
-export default App;
+  const OpenSidebar = () => {
+    setOpenSidebarToggle(!openSidebarToggle)
+  }
+
+  return (
+    <div className='grid-container'>
+      <Header OpenSidebar={OpenSidebar}/>
+      <Sidebar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar}/>
+      <Home />
+    </div>
+  )
+}
+
+export default App

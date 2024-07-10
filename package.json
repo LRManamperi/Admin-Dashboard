@@ -3,9 +3,14 @@
     "vite": "^5.3.3"
   },
   "scripts": {
-  "start": "vite",
-  "build": "vite build",
-  "serve": "vite preview"
-}
-
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.16.0",
+    "axios": "^1.7.2"
+  }
 }
